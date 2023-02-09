@@ -1,0 +1,43 @@
+@model Product
+
+<form method="post">
+    <div class="border p-3 mt-4">
+		<div class="mb-3">
+            <label asp-for="@Model.Title" class="form-label">Title</label>
+            <input type="text" asp-for="@Model.Title" class="form-control" placeholder="Title">
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+		
+		<div class="mb-3">
+			<label asp-for="Price"></label>
+			<input asp-for="Price" class="form-control" />
+			<span asp-validation-for="Price" class="text-danger"></span>
+			@* @{
+				if(Model.Price <= 0)
+				{
+					 <p class="text-danger">Price can't be minus or 0</p>
+				}
+			} *@
+		</div>
+		<div class="mb-3">
+			<label asp-for="Quantity"></label>
+			<input asp-for="Quantity" class="form-control" />
+			<span asp-validation-for="Quantity" class="text-danger"></span>
+			@* @{
+				if(Model.Quantity <= 0)
+				{
+					 <p class="text-danger">Quantity can't be minus or 0</p>
+				}
+			} *@
+		</div>
+		<div>
+			
+		</div>
+		<div>
+		<button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+		
+		<a asp-controller="Product" asp-action="List" class="btn btn-secondary" style="width:150px">
+			Back to List
+		</a>
+	</div>
+</form>
