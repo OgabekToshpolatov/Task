@@ -1,9 +1,21 @@
 @model List<Tasks.Entities.History>
-
+<style>
+    .filter{
+        border-radius: 2px;
+        border: 2px solid black;
+        list-style: none;
+        padding: 5px 5px ;
+    }
+    .filter:hover{
+        background-color: white;
+        color: black;
+    }
+</style>
 <div class="container p-1">
     <div class="row pt-4">
         <div class="col-2">
-            <h6 class="text-primary">History</h6>
+            <h1 class="text-primary">History</h1>
+            <a href="http://localhost:5236/swagger/index.html" class="filter">Filter</a>
 		</div>
 	</div>
     <br>
@@ -59,3 +71,4 @@
         </tbody>
     </table>
 </div>
+

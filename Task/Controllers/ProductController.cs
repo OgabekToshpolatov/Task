@@ -42,6 +42,16 @@ public class ProductController:Controller
     {
         if(!ModelState.IsValid) return View();
 
+        if(model.Price <= 0)
+        {
+            ModelState.AddModelError("Price", "The value cannot be minus or 0");
+            return View(model);
+        }
+        if(model.Quantity <= 0)
+        {
+            ModelState.AddModelError("Quantity", "The value cannot be minus or 0");
+            return View(model);
+        }
         var user1 = User.Identity!.Name;
 
          var user = _userManager.Users.FirstOrDefault(x => x.UserName == user1);
@@ -52,13 +62,35 @@ public class ProductController:Controller
 
     }
 
-    public IActionResult Update() => View();
+    public async Task<IActionResult> Update(long id) { 
+        var result = await _service.GetByIdAsync(id);
+        var product = result.Data;
+        
+        return View(product);
+    }
+
     [HttpPost]
     [Authorize(Roles = "admin")]
-    public async Task<IActionResult> Update(long id, Product model)
+    public async Task<IActionResult> UpdatePost(long id, Product model)
     {
         var user1 = User.Identity!.Name;
         var user = _userManager.Users.FirstOrDefault(x => x.UserName == user1);
+        
+        if(model.Title is null)
+        {
+            ModelState.AddModelError("Title", "Title is not null");
+            return View(model);
+        }
+        if(model.Price <= 0)
+        {
+            ModelState.AddModelError("Price", "The value cannot be minus or 0");
+            return View(model);
+        }
+        if(model.Quantity <= 0)
+        {
+            ModelState.AddModelError("Quantity", "The value cannot be minus or 0");
+            return View(model);
+        }
 
         await _service.Update(id, model,user!.Id.ToString());
 

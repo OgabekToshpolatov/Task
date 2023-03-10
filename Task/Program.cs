@@ -14,7 +14,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlite("Data Source = data.db");
+    // options.UseSqlite("Data Source = data.db");
+    options.UseInMemoryDatabase("data");
 });
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
@@ -28,6 +29,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddTransient<IHistoryRepository,HistoryRepository>();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
@@ -36,6 +39,9 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

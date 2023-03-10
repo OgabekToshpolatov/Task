@@ -2,6 +2,7 @@ namespace Tasks.Models;
 
 public class History
 {
+    public long Id { get; set; }
     public string? UserId { get; set; }
     public string? OldValues { get; set; }
     public string? NewValues { get; set; }

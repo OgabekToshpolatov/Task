@@ -13,7 +13,7 @@
 			<input asp-for="Price" class="form-control" />
 			<span asp-validation-for="Price" class="text-danger"></span>
 			@* @{
-				if(Model.Price <= 0)
+				if(@Model.Price <= 0 )
 				{
 					 <p class="text-danger">Price can't be minus or 0</p>
 				}

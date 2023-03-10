@@ -72,6 +72,14 @@ public class ProductService : IProductService
         }
     }
 
+    public async  ValueTask<Result<Product>> GetByIdAsync(long id)
+    {
+        var product = _productRepository.GetById(id);
+            if(product is null) return new("Bunday Product mavjud emas ");
+
+             return new(true) {Data = product.Adapt<Models.Product>()};
+    }
+
     public async ValueTask<Result<Product>> Remove(long id,string userId)
     {
         try

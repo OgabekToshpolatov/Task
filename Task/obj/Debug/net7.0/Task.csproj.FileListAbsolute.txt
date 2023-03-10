@@ -69,3 +69,13 @@ E:\Task\Task\obj\Debug\net7.0\refint\Task.dll
 E:\Task\Task\obj\Debug\net7.0\Task.pdb
 E:\Task\Task\obj\Debug\net7.0\Task.genruntimeconfig.cache
 E:\Task\Task\obj\Debug\net7.0\ref\Task.dll
+E:\Task\Task\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\Task\Task\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Task\Task\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Task\Task\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Task\Task\obj\Debug\net7.0\Task.MvcApplicationPartsAssemblyInfo.cs
+E:\Task\Task\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Task\Task\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Task\Task\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Task\Task\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\Task\Task\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll

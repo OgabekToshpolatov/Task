@@ -36,6 +36,13 @@ public class AccountController:Controller
         if (!ModelState.IsValid)
             return View(userCreateDto);
 
+        // var username =await _userManager.FindByNameAsync(userCreateDto.UserName!);
+        // if(username != null)
+        // {
+        //     ModelState.AddModelError(nameof(userCreateDto.UserName), "There is a user with this username");
+        //     return View(userCreateDto);
+        // }
+
         var user = await _userManager.FindByEmailAsync(userCreateDto.Email!);
         if (user != null)
         {
@@ -48,7 +55,7 @@ public class AccountController:Controller
 
         if (!result.Succeeded)
         {
-            ModelState.AddModelError("Email", "Can not register.");
+            ModelState.AddModelError("Username", "There is a user with this username");
             return View(userCreateDto);
         }
 
@@ -78,13 +85,19 @@ public class AccountController:Controller
             return View();
         }
         
-        var result = await _signInManager.PasswordSignInAsync(user, model.Password!, true, false);
+        var result = await _signInManager.PasswordSignInAsync(user, model.Password!, true, true);
         
        
         return LocalRedirect($"/Product/List");
 
         // return View();    
+    }
 
-        
+    [HttpPost]
+    public async Task<IActionResult> Logout()
+    {
+        await _signInManager.SignOutAsync();
+
+        return RedirectToAction("SignIn", "Account");
     }
 }

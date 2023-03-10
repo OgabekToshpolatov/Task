@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Task
 build_property.RootNamespace = Task
-build_property.ProjectDir = e:\Task\Task\
+build_property.ProjectDir = E:\Task\Task\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = e:\Task\Task
+build_property.MSBuildProjectDirectory = E:\Task\Task
 build_property._RazorSourceGeneratorDebug = 
 
-[e:/Task/Task/Views/Account/SignIn.cshtml]
+[E:/Task/Task/Views/Account/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Account/SignUp.cshtml]
+[E:/Task/Task/Views/Account/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Home/Index.cshtml]
+[E:/Task/Task/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Home/Privacy.cshtml]
+[E:/Task/Task/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Product/Addproduct.cshtml]
+[E:/Task/Task/Views/Product/Addproduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRwcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Product/History.cshtml]
+[E:/Task/Task/Views/Product/History.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxIaXN0b3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Product/List.cshtml]
+[E:/Task/Task/Views/Product/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Product/Update.cshtml]
+[E:/Task/Task/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Shared/Error.cshtml]
+[E:/Task/Task/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Task/Task/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/_ViewImports.cshtml]
+[E:/Task/Task/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/_ViewStart.cshtml]
+[E:/Task/Task/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Task/Task/Views/Shared/_Layout.cshtml]
+[E:/Task/Task/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-igz9kj0vja
